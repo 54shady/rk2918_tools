@@ -1,5 +1,7 @@
 # Rockchip pack and unpack tool
 
+[参考链接Rockchip打包和解包](http://wiki.t-firefly.com/zh_CN/ROC-RK3399-PC/fw_pack_unpack.html)
+
 This project is based on http://gitorious.org/rockchip-android/tools
 
 ## Preparetion
