@@ -23,11 +23,23 @@ Several executable bins are built
 
 ## Usage(release_update.img is the final package, update.img here is just data):
 
+### Pack
+
+Pack all metadata image into update.img(need parameter)
+
+	afptool -pack . update_data.img
+
+Final pack update_data.img into release update.img
+
+	img_maker -rk33 MiniLoaderAll.bin update_data.img release_update.img
+
+### Unpack
+
 Unpack release_update.img into img directory(loader.img and the real update.img data)
 
 	img_unpack release_update.img img
 
-Unpack the update.img from above into metadata directory
+Unpack the update.img(update data) from above into metadata directory
 
 	cd img
 	afptool -unpack update.img metadata
